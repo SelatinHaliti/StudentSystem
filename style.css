@@ -1,0 +1,108 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.nav-bar {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar li {
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-bar li:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    transform: scale(1.1);
+}
+
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+
+.btn-primary {
+    padding: 12px 24px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.1);
+}
+
+
+footer {
+    padding: 20px;
+    margin-top: 30px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 14px;
+    }
+}
